@@ -1,0 +1,196 @@
+<!DOCTYPE html>block0
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/iconengg.png"> <!--Icon Titulo-->
+    <link rel="stylesheet" href="cabeçalho.css">
+    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="conteudo.css">
+    <script src="home.js">
+    </script>
+    <title>Energy Hub</title>
+</head>
+
+<body>
+    <main>
+        <div class="banner"><img src="img/Aprenda sobre (3) (1).jpg" alt=""></div>
+             
+    </main>
+    <header class="header">
+
+        <div class="content">
+
+            <a href="#" target="_blank" class="logo"><img src="img/logo.png" title="Loop Nerd"></a>
+
+            <input class="mobile-btn" type="checkbox" id="mobile-btn" />
+            <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"></span></label>
+
+            <ul class="nav">
+
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Sobre">Sobre</a></li>
+                <li><a href="#" title="Artigos">Tecnologias</a></li>
+                <li><a href="#" title="Contato">Vantagens</a></li>
+                <li><a href="#" title="Contato">Notícias</a></li>
+                <li class="login"><a href="#" id="login-link">Login</a></li>
+                <!-- O botão de login tem um ID `login-link` e está contido em uma lista item (li) com a classe `login` -->
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <img class="Imagem" src="img/Vector.svg">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=FontName">
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não tem uma conta? <a href="#">Crie uma aqui</a></p>
+        </div>
+    </div>
+    <div id="mensagem"></div>
+    <script src="menu.js"></script>
+    <script src="ampliar.js"></script>
+    <script src="ampliar2.js"></script>
+    <script>
+        const loginBtn = document.getElementById("login-link"); /* começa selecionando elementos do documento usando seus IDs ou classes */
+
+        const modal = document.getElementById("login-modal");/* começa selecionando elementos do documento usando seus IDs ou classes */
+
+        loginBtn.onclick = function () { /* Quando clicado, é mudado para flex, tornando o modal visivel */
+            modal.style.display = "flex";
+        }
+        const closeBtn = document.getElementsByClassName("close")[0]; /* Fechamento do modal */
+
+        closeBtn.onclick = function () {
+            modal.style.display = "none"; /* Ao contrário do "flex", o "none" fecha o modal" */
+        }
+        window.onclick = function (event) { /* Fechar caso o usuário clique em algum lugar da tela */
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <h1 class="titulo1">Recursos Educacionais: Amplie Seu Conhecimento em <span class="green-text">Energia
+            Renovável!</span></h1>
+    <div class="divider"></div>
+
+    <div class="content">
+        <h2 class="titulo2">Artigos detalhados</h2>
+    </div>
+    <main class="cont1">
+        <p>
+            Navegue por nossa coleção de artigos que mergulham nas complexidades das diferentes tecnologias de energia
+            renovável. Entenda os princípios por trás da energia solar, eólica, hidrelétrica, biomassa e geotérmica.
+            Descubra como essas fontes de energia funcionam, suas vantagens e desafios, e os avanços mais recentes.
+        </p>
+    </main>
+    <div class="download-container">
+        <p>Clique no link abaixo para baixar o PDF:</p>
+        <a href="Energia Renovável - Online 16maio2016.pdf" download class="download-link">Download PDF</a>
+    </div>
+    <div class="content1">
+        <h2 class="titulo3">Vídeos Explicativos:</h2>
+    </div>
+    <main class="cont2">
+        <p>
+             Assista a vídeos que explicam visualmente os conceitos-chave das energias renováveis. Acompanhe o processo
+            de conversão da luz solar em eletricidade, explore como as turbinas eólicas capturam a energia dos ventos e
+            mergulhe nas maravilhas da energia geotérmica. Nossos vídeos são projetados para tornar os conceitos
+            complexos acessíveis a todos.
+        </p>
+    </main>
+    <div class="video-cont">
+        <a href="https://www.youtube.com/watch?v=bdgYTLW4ec4" class="video-link" target="_blank">Assistir ao Vídeo</a>
+    </div>
+    <div class="content">
+        <h2 class="titulo4"> Infográficos Interativos:</h2>
+    </div>
+    <main class="cont3">
+        <p>
+            Visualize informações cruciais por meio de infográficos interativos. Explore a pegada de carbono das
+            diferentes fontes de energia, compare a eficiência das tecnologias renováveis e entenda como os sistemas de
+            armazenamento de energia estão desempenhando um papel vital em nossa transição energética.
+        </p>
+    </main>
+    <div class="image-container">
+        <img src="img/4fb8a4b3387df5cb00731bf0d16db6eb.jpg" alt="Imagem 1" class="image">
+        <img src="img/e4e98a71d0a0d7d037ccba7c2a31117a.png" alt="Imagem 2" class="image">
+    </div>
+
+    <!--Inicio Footer-->
+
+    <section class="cardrosa">
+
+            <footer class="main_footer container">
+                   
+                    <div class="content">
+                           
+                            <div class="colfooter">
+                                   
+                                    <h4 class="titleFooter"> Menu</h4>
+                                   
+                                    <ul>
+                                       
+                                          <li><a href="#" title="Página Inícial">Página Inícial</a></li>
+                                          <li><a href="#" title="Sobre a Empresa">Sobre a Empresa</a></li>
+                                          <li><a href="#" title="Galeria de Fotos">Galeria de Fotos</a></li>
+                                          <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
+                                       
+                                        </ul>
+                               
+                                </div><!--Col Footer 1-->        
+                           
+                            <div class="colfooter">
+                                   
+                                   <h4 class="titleFooter"> Contato</h4>
+                                   <p><i class="icon icon-mail"></i> contato@energyhub.com.br</p>
+                                   <p><i class="icon icon-phone"></i> 11 90000-0000</p>
+                                   <p><i class="icon icon-whatsapp"></i> 11 90000-0000</p>
+                               
+                                </div><!--Col Footer 2-->
+                           
+                            <div class="colfooter">
+                                   
+                                   
+                                   <h4 class="titleFooter"> Redes Sociais</h4>
+                                   <ul>
+                                       
+                                        <li><a href="#" title="Página Inícial">Instagram</a></li>
+                                        <li><a href="#" title="Sobre a Empresa">Facebook</a></li>
+                                        <li><a href="#" title="Galeria de Fotos">Senai</a></li>
+                                        <li><a href="#" title="Fale Conosco">Desenvolvedores</a></li>
+                                     
+                                      </ul>      
+                               
+                                </div><!--Col Footer 3-->
+                           
+                            <div class="clear"></div>
+                       
+                        </div><!--Contant-->
+                   
+                    <div class="main_footer_copy">
+                           
+                            <p class="m-b-footer"> Energy Hub - 2023, todos os direitos reservados.</p>
+                            <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: <a href="#"
+                        title="Energy Hub">Energy Hub</a></p>
+                       
+                        </div>
+                </footer>
+    </section>
+
+</body>
+
+</html>
